@@ -23,7 +23,7 @@ or with some options
 <script type="module">
 	import { QRCode } from './qrcode.esm.js';
 
-	var qrcode = new QRCode(document.querySelector('#qrcode'), {
+	let qrcode = new QRCode(document.querySelector('#qrcode'), {
 		text: 'https://richter.studio',
 		width: 128,
 		height: 128,
@@ -31,14 +31,12 @@ or with some options
 		colorLight : "transparent",
 		correctLevel : QRCode.CorrectLevel.H
 	});
+
+	// and you can use some methods
+
+	qrcode.clear(); // clear the code.
+	qrcode.makeCode("http://naver.com"); // make another code.
 </script>
-```
-
-and you can use some methods
-
-```js
-qrcode.clear(); // clear the code.
-qrcode.makeCode("http://naver.com"); // make another code.
 ```
 
 ## Browser Compatibility
