@@ -7,7 +7,7 @@ QRCode.js has no dependencies.
 This is an amateurish attempt (by Arno Richter) to make the original script use the ESM format and more modern class syntax. It may work for you, it may not. Take it as is.
 
 ## Basic Usages
-```
+```html
 <div id="qrcode"></div>
 <script type="module">
 	import { QRCode } from './qrcode.esm.js';
@@ -18,7 +18,7 @@ This is an amateurish attempt (by Arno Richter) to make the original script use 
 
 or with some options
 
-```
+```html
 <div id="qrcode"></div>
 <script type="module">
 	import { QRCode } from './qrcode.esm.js';
@@ -36,7 +36,7 @@ or with some options
 
 and you can use some methods
 
-```
+```js
 qrcode.clear(); // clear the code.
 qrcode.makeCode("http://naver.com"); // make another code.
 ```
